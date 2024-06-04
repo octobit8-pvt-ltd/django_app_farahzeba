@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                git branch: 'master', changelog: false, credentialsId: 'github-jenkins-access', poll: false, url: 'https://github.com/octobit8-pvt-ltd/django_app_farahzeba.git'
+                git changelog: false, credentialsId: 'github-jenkins-access', poll: false, url: 'https://github.com/octobit8-pvt-ltd/django_app_farahzeba.git'
                 bat 'builparser.py
 '
             }
