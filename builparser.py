@@ -17,10 +17,10 @@ def parse_build_output(build_output):
     }
 def send_email(summary, developer_emails):
     # Email credentials and settings
-    smtp_server = "smtp.office365.com"
+    smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    smtp_username = "your_email@example.com"
-    smtp_password = "your_password"
+    smtp_username = "zebafarah85@gmail.com"
+    smtp_password = "hely fcon yyhw izce"
     from_email = smtp_username
     to_emails = developer_emails
     subject = f"Jenkins Build Summary: {summary['build_status']}"
@@ -59,8 +59,8 @@ if __name__ == "__main__":
     """
     # Developer emails
     developer_emails = [
-        "developer1@example.com",
-        "developer2@example.com"
+        "farah.zeba@octobit8.com",
+        "zebafarah85@gmail.com"
     ]
     # Parse the build output
     summary = parse_build_output(build_output)
